@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+    */
+    .grid-container{
+      height: 748px;
+      width: 748px;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px ;
+      gap: 10px;
+      background-color: black;
+    }
+    .red{
+      background-color: #E72F24;
+
+      
+    }
+    .blue{
+      background-color:#004592;
+      
+    }
+    .yellow{
+      background-color: #F9D01E;
+      
+    }
+    #w{
+      background-color:#F0F1EC;
+    }
+    .white-1{
+      grid-column: span 3;
+    }
+    .white-2{
+      grid-row: span 2;
+    }
+    .white-3{
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .white-4{
+      grid-area:3/4/5/4 ;
+      
+    }
+    .black{
+      background-color:black;
+      color: #F0F1EC;
+      border-bottom: 15px solid black;
+    }
+    .white-5{
+      grid-area:4 ;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="red"></div>
+    <div id="w" class="white-1"></div>
+    <div id="w" class="white-2"></div>
+    <div id="w" class="white-3"></div>
+    <div class="blue"></div>
+    <div id="w" class="white-4"></div>
+    <div class="yellow"></div> 
+    <div class="black"></div>
+    <div id="w" class="white-5"></div>
+  </div>
+</body>
+
+</html>
